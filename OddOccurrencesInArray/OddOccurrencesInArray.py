@@ -1,5 +1,5 @@
 # Odd Ocucurrences in Array
-# solução numero 1 ---------------------------------------------------
+# solução numero 1 ----------------------------------------------------
 def solution(array):
 
     len_array = len(array)
