@@ -1,6 +1,12 @@
 # Tape Equilibrium :D
 
+# Solution number 1 ( 55% ) --------------------------------------- #
+# ======= SWEAR WORDS WARNING !! IF YOURE TOO SENSITIVE, PLEASE JUMP TO LINE!! ======= #
+# This fucking solution works perfectly, unless youre a complete idiot that wants to use an array with a FUCKING 100 000 POSITIONS
+# Maykon, if you're reading this, im sorry
+
 def sum_elements(array, startint_pos, ending_pos=0):
+    '''Method to sum the array'''
     if ending_pos == 0: ending_pos = len(array)
 
     aux = 0
@@ -19,4 +25,18 @@ def solution(array):
         
     return min(list_results)
 
-print(solution())
+
+
+# Solution number 2 ( 100% ) --------------------------------------- #
+
+def solution(array):          
+    sum_elements = sum(array)
+    minimun = float('inf')
+    left_sum = 0
+
+    for i in array[:-1]:
+
+        left_sum += i
+        minimun = min(abs(sum_elements - 2 * left_sum), minimun)
+
+    return minimun
