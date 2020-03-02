@@ -1,7 +1,7 @@
 # Tape Equilibrium :D
 
 # Solution number 1 ( 55% ) --------------------------------------- #
-# ======= SWEAR WORDS WARNING !! IF YOURE TOO SENSITIVE, PLEASE JUMP TO LINE!! ======= #
+# ======= SWEAR WORDS WARNING !! IF YOURE TOO SENSITIVE, PLEASE JUMP TO LINE 8!! ======= #
 # This fucking solution works perfectly, unless youre a complete idiot that wants to use an array with a FUCKING 100 000 POSITIONS
 # Maykon, if you're reading this, im sorry
 
