@@ -24,8 +24,21 @@ def can_froG_jump(X:int, A:list):
     
     leafed_spot_list = list( set(A) )
 
-    if len(leafed_spot_list) == X: return True
+    j = 0
+    for i in range(0, X):
+        print(j)
+        if A[i] != j: return False
+        j += 1
 
-    return False
+    return True
+
         
+def solution(distance:int, leafes_array:list):
 
+    if can_froG_jump(distance, leafes_array):
+        for i in range(0, len(leafes_array)):
+            if i == X: return i
+
+
+can_froG_jump(5, [0, 1, 4, 2, 3, 5])
+# print(solution(5, [1, 4, 2, 3, 5]))
