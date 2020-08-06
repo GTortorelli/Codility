@@ -1,43 +1,41 @@
 # Frog River One 
 # Codility exercise resolution
 
-# def solution(X:int, A:list):
+# def solution(x:int, a:list):
 
 #     flag = 0
-#     for i in A:
-#         if i == X:
+#     for i in a:
+#         if i == x:
 #             flag += 1
 
 #     if flag > 1: return -1
 
 
-#     if A[0] == None: return -1 
+#     if a[0] == None: return -1
 
-#     for i in range(0, len(A)):
-#         if A[i] == X: return i
+#     for i in range(0, len(a)):
+#         if a[i] == x: return i
 
 #     return -1
 
 # print(solution(5, [5, 5, 2, 5, 5]))
 
-def can_froG_jump(X:int, A:list):
-    
-    leafed_spot_list = list( set(A) )
-
+def can_frog_jump(x: int, a: list):
+    leafed_spot_list = list(set(a))
     j = 0
-    for i in range(0, X):
+    for i in range(0, x):
         print(j)
-        if A[i] != j: return False
+        if a[i] != j:
+            return False
         j += 1
-
     return True
 
-        
-def solution(distance:int, leafes_array:list):
 
-    if can_froG_jump(distance, leafes_array):
-        for i in range(0, len(leafes_array)):
-            if i == X: return i
+def solution(distance: int, leaves_array: list):
+    if can_froG_jump(distance, leaves_array):
+        for i in range(0, len(leaves_array)):
+            if i == x:
+                return i
 
 
 can_froG_jump(5, [0, 1, 4, 2, 3, 5])
